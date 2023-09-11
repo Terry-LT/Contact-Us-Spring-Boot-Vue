@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:8081")
+@CrossOrigin()
 
 @AllArgsConstructor
 @RequestMapping(path = "api/v1/contactUs")

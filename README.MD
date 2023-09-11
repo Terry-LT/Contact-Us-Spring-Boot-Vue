@@ -37,3 +37,16 @@ npm run serve
 
 </li>
 </ol>
+
+### Backend
+<ol>
+<li>
+Test Backend
+
+```
+curl -X POST http://localhost:8080/api/v1/contactUs -H "Content-Type: application/json" -d "{ \"from\":\"what@ex.com\", \"subject\":\"Company Name\", \"phoneNumber\":\"7977999979\", \"body\":\"body\"}"
+```
+
+
+</li>
+<ol>
