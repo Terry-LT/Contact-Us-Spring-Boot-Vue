@@ -10,6 +10,7 @@ public class PhoneNumberValidator implements Predicate<String> {
     @Override
     public boolean test(String s) {
         //Regex phone number
-        return s.matches("^\\d{11}$");
+        //
+        return s.matches("^\\d{11}$") || s.matches("^\\d{10}$");
     }
 }

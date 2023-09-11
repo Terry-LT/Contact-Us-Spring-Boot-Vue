@@ -5,13 +5,17 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
+import java.util.HashMap;
+
 @ControllerAdvice
 public class EmailContactUsExceptionController {
     @ExceptionHandler(value = EmailFromIsEmptyException.class)
     public ResponseEntity<Object> emailFromIsEmptyException(
             EmailFromIsEmptyException exception){
+        HashMap<String, String> map = new HashMap<>();
+
         return new ResponseEntity<>(
-                "The 'form' field cannot be empty!",
+                "The 'email' field cannot be empty!",
                 HttpStatus.INTERNAL_SERVER_ERROR
         );
     }

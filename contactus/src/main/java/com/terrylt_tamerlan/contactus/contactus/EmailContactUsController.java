@@ -1,12 +1,11 @@
 package com.terrylt_tamerlan.contactus.contactus;
 
 import lombok.AllArgsConstructor;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:8081")
+
 @AllArgsConstructor
 @RequestMapping(path = "api/v1/contactUs")
 public class EmailContactUsController {
